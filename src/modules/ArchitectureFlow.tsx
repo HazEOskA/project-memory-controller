@@ -1,15 +1,15 @@
-const flow = ['User', 'Kernel', 'Engines', 'Memory', 'Validator', 'Deploy'];
+import { signalCards } from '../data/modules';
 
 export function ArchitectureFlow() {
   return (
     <section className="glass-card p-5">
-      <h2 className="text-xl font-semibold">Architecture Pipeline</h2>
-      <div className="mt-4 flex flex-wrap items-center gap-2 text-sm">
-        {flow.map((step, index) => (
-          <div key={step} className="flex items-center gap-2">
-            <span className="rounded-lg bg-slate-900/70 px-3 py-2">{step}</span>
-            {index < flow.length - 1 ? <span className="text-cyan-300">→</span> : null}
-          </div>
+      <h2 className="text-xl font-semibold">Signal Cards</h2>
+      <div className="mt-4 grid gap-3 sm:grid-cols-3">
+        {signalCards.map((signal) => (
+          <article key={signal.label} className="rounded-xl border border-slate-800 bg-slate-900/40 p-3">
+            <p className="text-xs uppercase tracking-wide text-slate-400">{signal.label}</p>
+            <p className={`mt-2 text-lg font-semibold ${signal.tone}`}>{signal.value}</p>
+          </article>
         ))}
       </div>
     </section>

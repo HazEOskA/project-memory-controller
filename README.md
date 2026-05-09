@@ -1,6 +1,6 @@
-# AI OS Launchpad
+# CryptoWolf Tools Hub
 
-AI OS Launchpad is a production-ready frontend control surface for AI OS orchestration, memory control, cognitive supervision, CryptoWolf signals, and deployment workflow visibility.
+CryptoWolf Tools Hub is a production-ready frontend focused on crypto operations: dashboard visibility, market/trending overview, airdrop/farming tracking, wallet status monitoring, and signal cards.
 
 ## Run locally
 
@@ -15,6 +15,6 @@ npm run dev
 npm run build
 ```
 
-## Deploy
+## Deploy (Vercel)
 
 Optimized for Vercel static deployment with Vite.
